@@ -69,14 +69,13 @@ public class JAMonDataSource implements DataSource, Referenceable, Serializable 
         return ((Referenceable)realDataSource).getReference();
     }
 
-
-
-    public boolean isWrapperFor(Class<?> arg0) throws SQLException {
-        return realDataSource.isWrapperFor(arg0);
-    }
-
-    public <T> T unwrap(Class<T> arg0) throws SQLException {
-        return realDataSource.unwrap(arg0);
-    }
+//  THIS DOES NOT COMPILE AGAINST JAVA 5 RT.jar and DOES NOT COMPILE AGAINST IBM Java 5.   
+//    public boolean isWrapperFor(Class<?> arg0) throws SQLException {
+//        return realDataSource.isWrapperFor(arg0);
+//    }
+//
+//    public <T> T unwrap(Class<T> arg0) throws SQLException {
+//        return realDataSource.unwrap(arg0);
+//    }
 
 }
