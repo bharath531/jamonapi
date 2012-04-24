@@ -44,6 +44,19 @@
             </roles>
         </developer>
     </developers>
+    <contributors>
+        <contributor>
+            <name>Siegfried Goeschl</name>
+        </contributor>
+        <contributor>
+            <name>Peter Kofler</name>
+            <organizationUrl>http://www.code-cop.org/</organizationUrl>
+        </contributor>
+        <contributor>
+            <name>Peter Brachwith</name>
+            <url>https://github.com/pebrc/</url>
+        </contributor>
+    </contributors>
 
     <licenses>
         <license>

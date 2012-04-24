@@ -29,6 +29,9 @@
     <artifactId>jamon-jar</artifactId>
     <name>JAMon API Core</name>
 
+    <!-- copy URL because of bug in Maven -->
+    <url>http://jamonapi.sourceforge.net/</url>
+
     <scm>
         <!-- copy SCM because of bug in Maven -->
         <connection>scm:git:https://github.com/sgoeschl/jamonapi.git</connection>
