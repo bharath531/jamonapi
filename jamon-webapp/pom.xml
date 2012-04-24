@@ -30,6 +30,13 @@
     <packaging>war</packaging>
     <name>JAMon API Webapp</name>
     
+    <scm>
+        <!-- copy SCM because of bug in Maven -->
+        <connection>scm:git:https://github.com/sgoeschl/jamonapi.git</connection>
+        <developerConnection>scm:git:git@github.com:sgoeschl/jamonapi.git</developerConnection>
+        <url>https://github.com/sgoeschl/jamonapi</url>
+    </scm>
+    
     <build>
         <finalName>jamon-webapp</finalName>
         <plugins>
