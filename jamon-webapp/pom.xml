@@ -29,9 +29,6 @@
       <version>1.8.0.10</version>
     </dependency>
   </dependencies>
-  <repositories>
-    <repository> <id>file-local</id> <url>file://${basedir}/repository</url> </repository>
-  </repositories>
   <build>
     <finalName>jamon-webapp</finalName>
     <plugins>
