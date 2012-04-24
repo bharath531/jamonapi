@@ -27,20 +27,38 @@
 
     <description>JAMon (Java Application Monitor)</description>
     <url>http://jamonapi.sourceforge.net/</url>
-    <inceptionYear>2005</inceptionYear>
 
     <prerequisites>
         <maven>2.0.9</maven>
     </prerequisites>
 
+    <inceptionYear>2005</inceptionYear>
+
+    <developers>
+        <developer>
+            <id>steve</id>
+            <name>Steve Souzu</name>
+            <email>admin at jamonapi.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+
     <licenses>
         <license>
-            <name>New BSD License</name>
+            <name>JAMon License (BSD License)</name>
             <url>http://www.opensource.org/licenses/bsd-license.php</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
 
+    <scm>
+        <connection>scm:git:https://github.com/sgoeschl/jamonapi.git</connection>
+        <developerConnection>scm:git:git@github.com:sgoeschl/jamonapi.git</developerConnection>
+        <url>https://github.com/sgoeschl/jamonapi</url>
+    </scm>
+    
     <build>
         <plugins>
             <plugin>
@@ -88,6 +106,8 @@
                 <configuration>
                     <minimumTokens>200</minimumTokens>
                     <targetJdk>${java.version}</targetJdk>
+                    <linkXRef>false</linkXRef>
+                    <aggregate>true</aggregate>
                     <rulesets>
                         <ruleset>/rulesets/basic.xml</ruleset>
                         <ruleset>/rulesets/finalizers.xml</ruleset>
